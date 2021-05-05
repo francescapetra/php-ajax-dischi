@@ -2,8 +2,6 @@
     include __DIR__ . '/db.php';
 ?>
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/style.css">
-  <title>Spotify-vue</title>
+  <title>Spotify-php</title>
 </head>
 <body>
     <div class="container">
@@ -24,7 +22,7 @@
         </div>
         <label for="">
           <p class="p_select">Seleziona genere</p>
-          <select class="select_genre" name="seleziona genere" v-model="select">
+          <select class="select_genre" name="seleziona genere">
          <!-- option -->
             <?php
                 foreach ($genres as $genre): ?> 
@@ -47,7 +45,7 @@
                     <p class="p_content"><?php echo $album['genre']?></p>
                     <p class="p_content"><?php echo $album['year']?></p>
                 </div>
-                </div>      
+             </div>      
             <?php endforeach; ?>
       </main>
     </div>
