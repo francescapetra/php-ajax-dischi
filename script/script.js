@@ -29,7 +29,7 @@
            return this.albums.sort(compare);
          }
        },
-    mounted: function(){
+     mounted: function(){
       axios.get('http://localhost/php-ajax-dischi/api.php')
       .then((request) =>{
       const result = request.data;
